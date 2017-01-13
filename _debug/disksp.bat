@@ -2,14 +2,14 @@
 CD %cd%
 IF NOT EXIST _TEMP (
     MKDIR _TEMP
-	IF EXIST _TEMP (
-	    CD _TEMP
-		GOTO Setup
-	) ELSE (
-	    ECHO The current installation directory has access issues, Perhaps run as admin?
-	)
-	@PAUSE>NUL
-	EXIT
+    IF EXIST _TEMP (
+	CD _TEMP
+        GOTO Setup
+    ) ELSE (
+	ECHO The current installation directory has access issues, Perhaps run as admin?
+    )
+    @PAUSE>NUL
+    EXIT
 )
 
 IF EXIST _TEMP (
