@@ -1,4 +1,4 @@
-Desktop@echo off
+@echo off
 CD %cd%
 IF NOT EXIST _TEMP (
     MKDIR _TEMP
