@@ -24,8 +24,9 @@ IF EXIST C: (
 	@ECHO C:\ exists in base memory. >>"install_data.txt"
 	SET /P installDir=Would you like to use C:\ as base directory? [Y/N] 
 	  IF %installDir%==Y GOTO INSTALL_C_DRIVE
-	  ECHO Skipped C:\, Continuing to check...
-	  @ECHO Skipped C:\, Continuing to check... >>"install_data.txt"
+	  ECHO No other drive is supported.
+	  @ECHO Denied C:\, Cannot install. >>"install_data.txt"
+	  GOTO END
 ) 
 
 :INSTALL_C_DRIVE
