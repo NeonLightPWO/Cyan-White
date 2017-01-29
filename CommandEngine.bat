@@ -24,6 +24,7 @@ GOTO CommandDest0010
 
 rem ; Internal Command For Anode
 :Anode
+ECHO.
 ECHO :::::::::::: System Information ::::::::::::
 ECHO.
 ECHO OSName : Cyan DOS Alpha
@@ -38,5 +39,6 @@ ECHO Registered Name : %Username%
 ECHO System Directory : %cd%
 ECHO.
 ECHO :::::::::::::::::::::::::::::::::::::::::::::
+ECHO.
 GOTO CommandDest0010
 
