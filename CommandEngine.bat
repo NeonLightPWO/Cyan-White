@@ -32,9 +32,6 @@ ECHO OSFullName : cyndos.alpha
 ECHO OSVersion : 0.0.1
 ECHO OSVersionPKG : 0010
 ECHO.
-ECHO System RAM : 25MB - 50MB
-ECHO CPU Usage : 1 Ghz - 1.5 Ghz
-ECHO.
 ECHO Registered Name : %Username%
 ECHO System Directory : %cd%
 ECHO.
