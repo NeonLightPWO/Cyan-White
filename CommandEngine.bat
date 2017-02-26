@@ -38,6 +38,8 @@ IF "%Command%"=="CL" GOTO Clear
 IF "%Command%"=="cl" GOTO Clear
 IF "%Command%"=="CLEAR" GOTO Clear
 IF "%Command%"=="clear" GOTO Clear
+IF "%Command%"=="cls" GOTO Clear
+IF "%Command%"=="CLS" GOTO Clear
 
 rem ; Command Not On System?
 ECHO Invalid command: "%Command%" - Command Not Found.
@@ -69,7 +71,7 @@ ECHO :::::::::::::: Command List :::::::::::::::::
 ECHO.
 ECHO Anode - (Alias: A): Shows System Information.
 ECHO Commands: Shows This Command List.
-ECHO Clear - (Alias: CL): Clears The Command Window.
+ECHO Clear - (Alias: CL, CLS): Clears The Command Window.
 ECHO.
 ECHO :::::::::::::::::::::::::::::::::::::::::::::
 SET Command=
