@@ -77,7 +77,7 @@ ECHO.
 ECHO Anode - (Alias: A): Shows System Information.
 ECHO Commands: Shows This Command List.
 ECHO Clear - (Alias: CL, CLS): Clears The Command Window.
-ECHO Github - (Alias: Git): Links To Cyan-White on Github.
+ECHO Github - (Alias: Git): Opens Link To Cyan-White on Github.
 ECHO.
 ECHO :::::::::::::::::::::::::::::::::::::::::::::
 SET Command=
