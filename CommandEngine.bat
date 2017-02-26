@@ -17,6 +17,9 @@ IF "%Command%"=="ANODE" GOTO Anode
 IF "%Command%"=="A" GOTO Anode
 IF "%Command%"=="a" GOTO Anode
 IF "%Command%"=="anode" GOTO Anode
+rem ; Command command. (To list commands)
+IF "%Command%"=="commands" GOTO Commands
+IF "%Command%"=="COMMANDS" GOTO Commands
 rem ; Clear Command.
 IF "%Command%"=="CL" GOTO Clear
 IF "%Command%"=="cl" GOTO Clear
@@ -44,6 +47,17 @@ ECHO System Directory : %cd%
 ECHO.
 ECHO :::::::::::::::::::::::::::::::::::::::::::::
 ECHO.
+GOTO CommandDest0010
+
+rem ; Internal Command For Commands
+:Commands
+ECHO :::::::::::::: Command List :::::::::::::::::
+ECHO.
+ECHO Anode - (Alias: A): Shows System Information.
+ECHO Commands: Shows This Command List.
+ECHO Clear - (Alias: CL): Clears The Command Window.
+ECHO.
+ECHO :::::::::::::::::::::::::::::::::::::::::::::
 GOTO CommandDest0010
 
 rem ; Internal Command For Clear
