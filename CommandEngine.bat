@@ -1,13 +1,22 @@
 @echo off
 setlocal EnableExtensions EnableDelayedExpansion
-SET CyanOSVersion=0010
-Title CyanDOS 0.0.1
-IF "%1"=="-ver" IF "%2"=="0010" GOTO CommandDest0010
+SET CyanOSVersion=0020
+Title CyanDOS 0.0.2
+IF "%1"=="-ver" IF "%2"=="0010" GOTO VersionCheck
+rem ; Still using same command destination.
+IF "%1"=="-ver" IF "%2"=="0020" GOTO VersionCheck
 ECHO Unable to open file stream, Invalid parameters used.
 EXIT
 
-:CommandDest0010
+:VersionCheck
 COLOR 0B
+IF %CyanOSVersion%==0010 Title CyanDOS 0.0.1 && GOTO CommandDest0010
+IF %CyanOSVersion%==0020 Title CyanDOS 0.0.2 && GOTO CommandDest0010
+ECHO Unknown Version - Press any key to end booting into Cyan-White.
+PAUSE>NUL
+EXIT
+
+:CommandDest0010
 ECHO.
 SET /P Command=::%CD%::[%TIME%]:: 
 rem ; Command Escape
@@ -39,8 +48,8 @@ ECHO :::::::::::: System Information ::::::::::::
 ECHO.
 ECHO OSName : Cyan DOS Alpha
 ECHO OSFullName : cyndos.alpha
-ECHO OSVersion : 0.0.1
-ECHO OSVersionPKG : 0010
+ECHO OSVersion : 0.0.2
+ECHO OSVersionPKG : 0020
 ECHO.
 ECHO Registered Name : %Username%
 ECHO System Directory : %cd%
