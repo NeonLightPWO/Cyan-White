@@ -10,6 +10,8 @@ EXIT
 COLOR 0B
 ECHO.
 SET /P Command=::%CD%::[%TIME%]:: 
+rem ; Command Escape
+IF "%Command%"=="" GOTO CommandDest0010
 rem ; Anode Command.
 IF "%Command%"=="ANODE" GOTO Anode
 IF "%Command%"=="A" GOTO Anode
