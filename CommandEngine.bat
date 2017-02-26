@@ -56,6 +56,7 @@ ECHO System Directory : %cd%
 ECHO.
 ECHO :::::::::::::::::::::::::::::::::::::::::::::
 ECHO.
+SET Command=
 GOTO CommandDest0010
 
 rem ; Internal Command For Commands
@@ -67,9 +68,11 @@ ECHO Commands: Shows This Command List.
 ECHO Clear - (Alias: CL): Clears The Command Window.
 ECHO.
 ECHO :::::::::::::::::::::::::::::::::::::::::::::
+SET Command=
 GOTO CommandDest0010
 
 rem ; Internal Command For Clear
 :Clear
 cls
+SET Command=
 GOTO CommandDest0010
