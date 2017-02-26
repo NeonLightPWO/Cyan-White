@@ -10,6 +10,10 @@ EXIT
 
 :VersionCheck
 COLOR 0B
+SET "OSFullVersion"=="0.0.2"
+SET "OSVersion"=="0020"
+SET "OSFullName"=="cyndos.alpha"
+SET "OSName"=="Cyan DOS Alpha"
 IF %CyanOSVersion%==0010 Title CyanDOS 0.0.1 && GOTO CommandDest0010
 IF %CyanOSVersion%==0020 Title CyanDOS 0.0.2 && GOTO CommandDest0010
 ECHO Unknown Version - Press any key to end booting into Cyan-White.
@@ -46,10 +50,10 @@ rem ; Internal Command For Anode
 ECHO.
 ECHO :::::::::::: System Information ::::::::::::
 ECHO.
-ECHO OSName : Cyan DOS Alpha
-ECHO OSFullName : cyndos.alpha
-ECHO OSVersion : 0.0.2
-ECHO OSVersionPKG : 0020
+ECHO OSName : %OSName%
+ECHO OSFullName : %OSFullName%
+ECHO OSVersion : %OSFullVersion%
+ECHO OSVersionPKG : %OSVersion%
 ECHO.
 ECHO Registered Name : %Username%
 ECHO System Directory : %cd%
