@@ -18,7 +18,7 @@ rem ; Version Checker
 IF %CyanOSVersion% EQU 0010 ( ECHO CyanDOS Version 0.0.1 )
 IF %CyanOSVersion% EQU 0020 ( ECHO CyanDOS Version 0.0.2 )
 ECHO.
-ECHO Bugs may still appear as we are still in alpha, Report bugs to ShadesOfBlack [https://github.com/ShadesOfBlack]
+ECHO Bugs may still appear as we are still in pre-alpha, Report bugs to ShadesOfBlack [https://github.com/ShadesOfBlack]
 ECHO.
 ECHO Welcome to CyanDOS - Press Any Key To Boot Into CyanDOS
 ECHO %delim%
