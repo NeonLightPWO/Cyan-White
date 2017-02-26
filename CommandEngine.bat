@@ -40,6 +40,11 @@ IF "%Command%"=="CLEAR" GOTO Clear
 IF "%Command%"=="clear" GOTO Clear
 IF "%Command%"=="cls" GOTO Clear
 IF "%Command%"=="CLS" GOTO Clear
+rem ; Github Repo Command.
+IF "%Command%"=="git" GOTO Github
+IF "%Command%"=="GIT" GOTO Github
+IF "%Command%"=="github" GOTO Github
+IF "%Command%"=="GITHUB" GOTO Github
 
 rem ; Command Not On System?
 ECHO Invalid command: "%Command%" - Command Not Found.
@@ -72,6 +77,7 @@ ECHO.
 ECHO Anode - (Alias: A): Shows System Information.
 ECHO Commands: Shows This Command List.
 ECHO Clear - (Alias: CL, CLS): Clears The Command Window.
+ECHO Github - (Alias: Git): Links To Cyan-White on Github.
 ECHO.
 ECHO :::::::::::::::::::::::::::::::::::::::::::::
 SET Command=
@@ -81,4 +87,9 @@ rem ; Internal Command For Clear
 :Clear
 cls
 SET Command=
+GOTO CommandDest0010
+
+:Github
+ECHO Opening web browser to Cyan-White Github...
+START https://github.com/ShadesOfBlack/Cyan-White/
 GOTO CommandDest0010
