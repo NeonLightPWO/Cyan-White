@@ -15,6 +15,11 @@ IF "%Command%"=="ANODE" GOTO Anode
 IF "%Command%"=="A" GOTO Anode
 IF "%Command%"=="a" GOTO Anode
 IF "%Command%"=="anode" GOTO Anode
+rem ; Clear Command.
+IF "%Command%"=="CL" GOTO Clear
+IF "%Command%"=="cl" GOTO Clear
+IF "%Command%"=="CLEAR" GOTO Clear
+IF "%Command%"=="clear" GOTO Clear
 
 rem ; Command Not On System?
 ECHO Invalid command: "%Command%" - Command Not Found.
@@ -39,3 +44,7 @@ ECHO :::::::::::::::::::::::::::::::::::::::::::::
 ECHO.
 GOTO CommandDest0010
 
+rem ; Internal Command For Clear
+:Clear
+cls
+GOTO CommandDest0010
