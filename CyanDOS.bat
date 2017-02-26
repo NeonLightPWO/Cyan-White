@@ -10,6 +10,8 @@ rem ; Latest - Variable for CommandEngine
 SET latest=0020
 rem ; Delimiter
 SET delim=::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+rem ; Actually set above color
+COLOR %CRM%
 
 :int_setup
 ECHO %delim%
