@@ -1,6 +1,6 @@
 @echo off
 setlocal EnableExtensions EnableDelayedExpansion
-SET CyanOSVersion=0020
+SET CyanOSVersion=0030
 Title CyanDOS 0.0.3
 IF "%1"=="-ver" IF "%2"=="0010" GOTO VersionCheck
 rem ; Still using same command destination.
