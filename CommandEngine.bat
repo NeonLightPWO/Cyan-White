@@ -5,17 +5,37 @@ Title CyanDOS 0.0.2
 IF "%1"=="-ver" IF "%2"=="0010" GOTO VersionCheck
 rem ; Still using same command destination.
 IF "%1"=="-ver" IF "%2"=="0020" GOTO VersionCheck
+rem ; Still using same command destination.
+IF "%1"=="-ver" IF "%2"=="0030" GOTO VersionCheck
 ECHO Unable to open file stream, Invalid parameters used.
 EXIT
 
 :VersionCheck
 COLOR 0B
-SET "OSFullVersion"=="0.0.2"
-SET "OSVersion"=="0020"
-SET "OSFullName"=="cyndos.alpha"
-SET "OSName"=="Cyan DOS Alpha"
-IF %CyanOSVersion%==0010 Title CyanDOS 0.0.1 && GOTO CommandDest0010
-IF %CyanOSVersion%==0020 Title CyanDOS 0.0.2 && GOTO CommandDest0010
+IF "%2"=="0010" ( 
+    Title CyanDOS 0.0.1
+	SET OSName=Cyan DOS Alpha
+	SET OSFullName=cyndos.alpha
+	SET OSVersion=0010
+	SET OSFullVersion=0.0.1
+	GOTO CommandDest0010
+)
+IF "%2"=="0020" (
+    Title CyanDOS 0.0.2
+	SET OSName=Cyan DOS Alpha
+	SET OSFullName=cyndos.alpha
+	SET OSVersion=0020
+	SET OSFullVersion=0.0.2
+	GOTO CommandDest0010
+)
+IF "%2"=="0030" (
+    Title CyanDOS 0.0.3
+	SET OSName=Cyan DOS Alpha
+	SET OSFullName=cyndos.alpha
+	SET OSVersion=0030
+	SET OSFullVersion=0.0.3
+	GOTO CommandDest0010
+)
 ECHO Unknown Version - Press any key to end booting into Cyan-White.
 PAUSE>NUL
 EXIT
@@ -77,7 +97,7 @@ ECHO.
 ECHO Anode - (Alias: A): Shows System Information.
 ECHO Commands: Shows This Command List.
 ECHO Clear - (Alias: CL, CLS): Clears The Command Window.
-ECHO Github - (Alias: Git): Opens Link To Cyan-White on Github.
+ECHO Github - (Alias: Git): Links To Cyan-White on Github.
 ECHO.
 ECHO :::::::::::::::::::::::::::::::::::::::::::::
 SET Command=
