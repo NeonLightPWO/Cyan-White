@@ -109,6 +109,7 @@ cls
 SET Command=
 GOTO CommandDest0010
 
+rem ; Internal Command For Github
 :Github
 ECHO Opening web browser to Cyan-White Github...
 START https://github.com/ShadesOfBlack/Cyan-White/
