@@ -4,7 +4,7 @@ rem ; This handles accessing websites and such
 rem ; Via the registered default browser.
 rem ; Credit to Shade (Neon~Light) for Development.
 
-rem ; This file is currently not in use till 0.0.4
+rem ; This file is only compatiable with 0.0.4 or newer.
 IF "%1"=="-INTNET" GOTO DRV_VARIABLES
 ECHO Unable to open file stream, Invalid parameters used.
 EXIT
